@@ -20,25 +20,24 @@ public class WaitingController extends HttpServlet {
 		if (session != null && session.getAttribute("account") != null) {
 			UserModel u = (UserModel) session.getAttribute("account");
 			session.setAttribute("account", u);
-			req.setAttribute("account", u);
-			session.setAttribute("userId", u.getId());
-			req.setAttribute("fullname", u.getFullName());
+            req.setAttribute("account", u);
+            session.setAttribute("userId", u.getId());
+            req.setAttribute("fullname", u.getFullName());
 			String imageUrl = "/uploads/" + u.getId() + u.getImages();
 			req.setAttribute("imageUrl", imageUrl);
-			if (u.getRoleid() == 1) {
-				RequestDispatcher rd = req.getRequestDispatcher("/views/home.jsp");
-				rd.forward(req, resp);
-			} else if (u.getRoleid() == 2) {
-				resp.sendRedirect(req.getContextPath() + "/admin/home");
-			} else if (u.getRoleid() == 3) {
-				resp.sendRedirect(req.getContextPath() + "/manager/home");
-			} else {
-				resp.sendRedirect(req.getContextPath() + "/home");
-			}
+				if (u.getRoleid() == 1) {
+					RequestDispatcher rd =req.getRequestDispatcher("/views/home.jsp");
+					rd.forward(req, resp);
+				} else if (u.getRoleid() == 2) {
+					resp.sendRedirect(req.getContextPath() + "/admin/home");
+				} else if (u.getRoleid() == 3) {
+					resp.sendRedirect(req.getContextPath() + "/manager/home");
+				} else {
+					resp.sendRedirect(req.getContextPath() + "/home");
+				}
 		} else {
-			RequestDispatcher rd = req.getRequestDispatcher("/views/home.jsp");
+			RequestDispatcher rd =req.getRequestDispatcher("/views/home.jsp");
 			rd.forward(req, resp);
-			/* resp.sendRedirect(req.getContextPath() + "/views/home.jsp"); */
 		}
 	}
 }

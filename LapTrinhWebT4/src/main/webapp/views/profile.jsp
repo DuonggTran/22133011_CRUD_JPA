@@ -48,19 +48,14 @@ if (userId == null) {
 							name="phone" class="form-control" value="${user.phone}" />
 					</div>
 					<input type="hidden" name="id" value="${user.id}" />
-					<!-- <div class="form-group mb-3">
-						<label for="image">Image:</label>
-						<input type="file" id="images" name="images" class="form-control" />
-					</div> -->
 
 					<div class="form-group mb-3">
-						<label for="image">Image:</label> <input type="file" id="images"
+						<label for="images">Image:</label> <input type="file" id="images"
 							name="images" class="form-control" accept="image/*"
 							onchange="previewImage(event)" /> <img id="imagePreview" src="#"
 							alt="Image preview"
 							style="display: none; margin-top: 10px; max-width: 100%;" />
 					</div>
-
 					<script>
 						function previewImage(event) {
 							const input = event.target;

@@ -49,6 +49,11 @@ bootstrap.min.css"
 	</div>
 </body>
 </html> --%>
+
+
+
+
+
 <html>
 <head>
 <meta charset="UTF-8">
@@ -90,7 +95,7 @@ bootstrap.min.css"
 					</div>
 					<button type="submit" class="btn btn-primary w-100">Reset
 						Password</button>
-					<a href="/LapTrinhWebT4/login" class="btn btn-link">Đăng nhập?</a>
+						<a href="/LapTrinhWebT4/login" class="btn btn-link">Đăng nhập?</a>
 				</form>
 			</div>
 

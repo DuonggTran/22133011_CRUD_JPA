@@ -16,7 +16,7 @@ public class DownloadFileController extends HttpServlet{
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String fname = request.getParameter("fname");
         if (fname != null && !fname.isEmpty()) {
-            File imageFile = new File("D:\\Tool_LapTrinhWeb\\SpringTool\\upload\\" + fname);
+            File imageFile = new File("C:\\DownLoads\\" + fname);
             if (imageFile.exists()) {
                 response.setContentType(getServletContext().getMimeType(imageFile.getName()));
                 Files.copy(imageFile.toPath(), response.getOutputStream());

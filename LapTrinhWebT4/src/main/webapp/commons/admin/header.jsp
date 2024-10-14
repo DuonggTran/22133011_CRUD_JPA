@@ -31,10 +31,10 @@
                 <!-- BEGIN TOP BAR MENU -->
                 <div class="col-md-6 col-sm-6 additional-nav">
                     <ul class="list-unstyled list-inline pull-right">
-                        <li><a href="/Login_Register/waiting">My Account</a></li>
+                        <li><a href="/LapTrinhWebT4/profile">My Account</a></li>
                         <li><a href="shop-wishlist.html">My Wishlist</a></li>
                         <li><a href="shop-checkout.html">Checkout</a></li>
-                        <li><a href="/Login_Register/logout">Đăng Xuất</a></li>
+                        <li><a href="/LapTrinhWebT4/logout">Đăng Xuất</a></li>
                     </ul>
                 </div>
                 <!-- END TOP BAR MENU -->

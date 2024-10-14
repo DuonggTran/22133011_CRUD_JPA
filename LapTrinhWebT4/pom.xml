@@ -4,7 +4,6 @@
   <artifactId>LapTrinhWebT4</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
-  
   <dependencies>
 		<dependency>
 			<groupId>jakarta.servlet</groupId>
@@ -93,7 +92,6 @@
 			<artifactId>sitemesh</artifactId>
 			<version>3.2.1</version>
 		</dependency>
-
 	</dependencies>
 	<build>
 		<pluginManagement>

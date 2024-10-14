@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\H?c kì 1 n?m 3\L?p trình web\22133011_CRUD_JPA\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+4270269007.index
+1707667180.index
+444387980.index
+801696917.index
+3796277425.index
+1913683620.index
